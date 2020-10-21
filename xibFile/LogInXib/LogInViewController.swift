@@ -43,15 +43,15 @@ class LogInViewController: UIViewController {
     @IBAction func logInButton(_ sender: Any) {
         let vc = NewViewController()
         vc.modalPresentationStyle = .fullScreen
+        let text = enterLogName.text
+        vc.logNameText = text ?? "error"
         self.present(vc, animated: true, completion: nil)
         
         
-        if let logInButton = storyboard?.instantiateInitialViewController() as? NewViewController {
-            let text = enterLogName.text
-            logInButton.logNameText = text ?? "error"
-        }
         
         
         
     }
 }
+
+
