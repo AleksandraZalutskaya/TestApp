@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainMenu" id="BYZ-38-t0r" customClass="ViewController" customModule="xibFile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s19-fH-6Nx">
+                                <rect key="frame" x="84" y="577.5" width="94" height="46"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
+                                <state key="normal" title="SignUp">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonXib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqJ-G1-3tD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oER-hU-Zaq">
+                                <rect key="frame" x="260" y="577.5" width="101" height="46"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
+                                <state key="normal" title="LogIn">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInXib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHN-Od-FjM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4K-28-Bkc">
+                                <rect key="frame" x="117" y="295.5" width="189" height="46"/>
+                                <color key="backgroundColor" red="0.87873930460000005" green="0.88441143129999999" blue="0.85505269669999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
+                                <state key="normal" title="Lessons">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0y2-9K-UKI">
+                                <rect key="frame" x="117" y="431.5" width="189" height="46"/>
+                                <color key="backgroundColor" red="0.87873930460000005" green="0.88441143129999999" blue="0.85505269669999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
+                                <state key="normal" title="Library">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJD-oM-XD6">
+                                <rect key="frame" x="117" y="167.5" width="189" height="46"/>
+                                <color key="backgroundColor" red="0.87873930460000005" green="0.88441143129999999" blue="0.85505269669999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="20"/>
+                                <state key="normal" title="Classmates">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.8965628933920049" blue="0.91383804991106943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="0y2-9K-UKI" secondAttribute="trailing" constant="108" id="0IN-Uf-g8S"/>
+                            <constraint firstItem="oER-hU-Zaq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.5" id="0LB-BZ-65a"/>
+                            <constraint firstItem="KJD-oM-XD6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="2b0-Hf-Ajc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="KJD-oM-XD6" secondAttribute="trailing" constant="108" id="6Db-fM-uCK"/>
+                            <constraint firstItem="0y2-9K-UKI" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.456522" priority="999" id="6bE-iZ-CCV"/>
+                            <constraint firstItem="s19-fH-6Nx" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.21256" priority="999" id="8Nx-c2-KbA"/>
+                            <constraint firstItem="oER-hU-Zaq" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.258454" priority="999" id="AJM-Tf-lpd"/>
+                            <constraint firstItem="i4K-28-Bkc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="4.5" id="Aco-PB-RKi"/>
+                            <constraint firstItem="s19-fH-6Nx" firstAttribute="top" secondItem="0y2-9K-UKI" secondAttribute="bottom" priority="999" constant="100" id="FRd-js-tWI"/>
+                            <constraint firstItem="KJD-oM-XD6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.456522" priority="999" id="Hsq-at-Gyh"/>
+                            <constraint firstItem="0y2-9K-UKI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="1.5" id="I4w-Jo-Rj1"/>
+                            <constraint firstItem="0y2-9K-UKI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="4.5" id="M8h-dX-faC"/>
+                            <constraint firstItem="i4K-28-Bkc" firstAttribute="top" secondItem="KJD-oM-XD6" secondAttribute="bottom" priority="999" constant="82" id="MVj-NH-8wY"/>
+                            <constraint firstItem="i4K-28-Bkc" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="Mip-dn-nBL"/>
+                            <constraint firstItem="oER-hU-Zaq" firstAttribute="leading" relation="lessThanOrEqual" secondItem="s19-fH-6Nx" secondAttribute="trailing" constant="82" id="NG8-vh-tax"/>
+                            <constraint firstItem="0y2-9K-UKI" firstAttribute="top" secondItem="i4K-28-Bkc" secondAttribute="bottom" priority="999" constant="90" id="SH0-LL-dAE"/>
+                            <constraint firstItem="0y2-9K-UKI" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="U33-cb-3rj"/>
+                            <constraint firstItem="oER-hU-Zaq" firstAttribute="top" secondItem="0y2-9K-UKI" secondAttribute="bottom" priority="999" constant="100" id="UpU-jb-6Jh"/>
+                            <constraint firstItem="i4K-28-Bkc" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.456522" priority="999" id="eAj-Ff-ZeX"/>
+                            <constraint firstItem="KJD-oM-XD6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="4.5" id="jge-3N-nr0"/>
+                            <constraint firstItem="s19-fH-6Nx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="qc5-kR-BNq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="i4K-28-Bkc" secondAttribute="trailing" constant="108" id="tXK-5e-zkv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oER-hU-Zaq" secondAttribute="trailing" constant="53" id="u4L-lt-RVJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="s19-fH-6Nx" id="7Ov-br-FAc"/>
+                        <outlet property="logIn" destination="oER-hU-Zaq" id="Nwj-QZ-aTV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+</document>
