@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="xibFile" customModuleProvider="target">
             <connections>
                 <outlet property="label" destination="FWM-au-Fp5" id="j0F-Ov-2Wi"/>
+                <outlet property="repearPass" destination="jaN-yn-BPa" id="Oy3-kL-Eoh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

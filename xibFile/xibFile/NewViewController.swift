@@ -15,9 +15,7 @@ class NewViewController: UIViewController {
         super.loadView()
         
         view.backgroundColor = .lightGray
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-//        var firstText = "Welcome"
-//        let labelText = NSAttributedString(string: firstText)
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 100))
         label.text = "Welcome to my app"
         label.backgroundColor = .white
         label.textAlignment = .center
@@ -33,27 +31,28 @@ class NewViewController: UIViewController {
         welcomeText.numberOfLines = .zero
         welcomeText.backgroundColor = .white
         welcomeText.textAlignment = .center
-        
-//        welcomeText.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            welcomeText.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 50),
-//            welcomeText.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-//            welcomeText.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 10),
-//            welcomeText.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-//        ])
         view.addSubview(welcomeText)
         
+        welcomeText.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            welcomeText.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 20),
+            welcomeText.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            welcomeText.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+
+        
         let firstButton = UIButton(frame: CGRect(x: 50, y: 40, width: 100, height: 50))
-        firstButton.setTitle("This is first button", for: .normal)
+        firstButton.setTitle("First button", for: .normal)
         firstButton.backgroundColor = .brown
-        
-//        firstButton.translatesAutoresizingMaskIntoConstraints = false
-//
-//        firstButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
-//        firstButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50).isActive = true
-//        firstButton.topAnchor.constraint(equalTo: view.firstBaselineAnchor, constant: 20).isActive = true
-        
         view.addSubview(firstButton)
+        
+        firstButton.translatesAutoresizingMaskIntoConstraints = false
+
+        firstButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        firstButton.topAnchor.constraint(equalTo: view.firstBaselineAnchor, constant: 50).isActive = true
+        firstButton.bottomAnchor.constraint(equalTo: label.topAnchor, constant: -200).isActive = true
+        
+        
         
         
         title = logNameText
@@ -67,3 +66,6 @@ class NewViewController: UIViewController {
         
     }
 }
+
+
+
