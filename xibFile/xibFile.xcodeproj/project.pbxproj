@@ -13,11 +13,12 @@
 		A827D1B62538A79400825A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A827D1B42538A79400825A76 /* Main.storyboard */; };
 		A827D1B82538A79700825A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A827D1B72538A79700825A76 /* Assets.xcassets */; };
 		A827D1BB2538A79700825A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A827D1B92538A79700825A76 /* LaunchScreen.storyboard */; };
-		A827D1C52538A7E500825A76 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A827D1C32538A7E500825A76 /* SignUpViewController.swift */; };
-		A827D1C62538A7E500825A76 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A827D1C42538A7E500825A76 /* SignUpViewController.xib */; };
-		A827D1CC2538AA2A00825A76 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A827D1CA2538AA2A00825A76 /* LogInViewController.swift */; };
-		A827D1CD2538AA2A00825A76 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A827D1CB2538AA2A00825A76 /* LogInViewController.xib */; };
-		A827D1F9253C900400825A76 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A827D1F8253C900400825A76 /* NewViewController.swift */; };
+		A82A2C9525750E7100A547B2 /* ExtentionConstr.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A2C9425750E7100A547B2 /* ExtentionConstr.swift */; };
+		A82A2C98257514C400A547B2 /* ArrayToUSe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A2C97257514C400A547B2 /* ArrayToUSe.swift */; };
+		A8A08F672573DFA9004EFC07 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A08F662573DFA9004EFC07 /* MainView.swift */; };
+		A8A08F6C2573FB53004EFC07 /* OpenTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A08F6B2573FB53004EFC07 /* OpenTabBar.swift */; };
+		A8A08F6F257400B3004EFC07 /* FavouriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A08F6E257400B3004EFC07 /* FavouriteList.swift */; };
+		A8A08F72257400D3004EFC07 /* ListOfTwenty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A08F71257400D3004EFC07 /* ListOfTwenty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +30,12 @@
 		A827D1B72538A79700825A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A827D1BA2538A79700825A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A827D1BC2538A79700825A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A827D1C32538A7E500825A76 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		A827D1C42538A7E500825A76 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
-		A827D1CA2538AA2A00825A76 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		A827D1CB2538AA2A00825A76 /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
-		A827D1F8253C900400825A76 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		A82A2C9425750E7100A547B2 /* ExtentionConstr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionConstr.swift; sourceTree = "<group>"; };
+		A82A2C97257514C400A547B2 /* ArrayToUSe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayToUSe.swift; sourceTree = "<group>"; };
+		A8A08F662573DFA9004EFC07 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A8A08F6B2573FB53004EFC07 /* OpenTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTabBar.swift; sourceTree = "<group>"; };
+		A8A08F6E257400B3004EFC07 /* FavouriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteList.swift; sourceTree = "<group>"; };
+		A8A08F71257400D3004EFC07 /* ListOfTwenty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTwenty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +52,6 @@
 		A827D1A22538A79400825A76 = {
 			isa = PBXGroup;
 			children = (
-				A827D1C82538A7FA00825A76 /* signUpXib */,
-				A827D1CF2538AA3B00825A76 /* LogInXib */,
 				A827D1AD2538A79400825A76 /* xibFile */,
 				A827D1AC2538A79400825A76 /* Products */,
 			);
@@ -70,9 +70,13 @@
 			children = (
 				A827D1AE2538A79400825A76 /* AppDelegate.swift */,
 				A827D1B02538A79400825A76 /* SceneDelegate.swift */,
-				A827D1F8253C900400825A76 /* NewViewController.swift */,
-				A827D1B22538A79400825A76 /* ViewController.swift */,
-				A827D1B42538A79400825A76 /* Main.storyboard */,
+				A8A08F662573DFA9004EFC07 /* MainView.swift */,
+				A8A08F6B2573FB53004EFC07 /* OpenTabBar.swift */,
+				A8A08F6E257400B3004EFC07 /* FavouriteList.swift */,
+				A8A08F71257400D3004EFC07 /* ListOfTwenty.swift */,
+				A82A2C97257514C400A547B2 /* ArrayToUSe.swift */,
+				A82A2C9425750E7100A547B2 /* ExtentionConstr.swift */,
+				A85735CE25752B550026BD59 /* Haven't been Used */,
 				A827D1B72538A79700825A76 /* Assets.xcassets */,
 				A827D1B92538A79700825A76 /* LaunchScreen.storyboard */,
 				A827D1BC2538A79700825A76 /* Info.plist */,
@@ -80,22 +84,13 @@
 			path = xibFile;
 			sourceTree = "<group>";
 		};
-		A827D1C82538A7FA00825A76 /* signUpXib */ = {
+		A85735CE25752B550026BD59 /* Haven't been Used */ = {
 			isa = PBXGroup;
 			children = (
-				A827D1C32538A7E500825A76 /* SignUpViewController.swift */,
-				A827D1C42538A7E500825A76 /* SignUpViewController.xib */,
+				A827D1B22538A79400825A76 /* ViewController.swift */,
+				A827D1B42538A79400825A76 /* Main.storyboard */,
 			);
-			path = signUpXib;
-			sourceTree = "<group>";
-		};
-		A827D1CF2538AA3B00825A76 /* LogInXib */ = {
-			isa = PBXGroup;
-			children = (
-				A827D1CA2538AA2A00825A76 /* LogInViewController.swift */,
-				A827D1CB2538AA2A00825A76 /* LogInViewController.xib */,
-			);
-			path = LogInXib;
+			path = "Haven't been Used";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +152,7 @@
 			files = (
 				A827D1BB2538A79700825A76 /* LaunchScreen.storyboard in Resources */,
 				A827D1B82538A79700825A76 /* Assets.xcassets in Resources */,
-				A827D1C62538A7E500825A76 /* SignUpViewController.xib in Resources */,
 				A827D1B62538A79400825A76 /* Main.storyboard in Resources */,
-				A827D1CD2538AA2A00825A76 /* LogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,12 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A08F72257400D3004EFC07 /* ListOfTwenty.swift in Sources */,
 				A827D1B32538A79400825A76 /* ViewController.swift in Sources */,
+				A8A08F672573DFA9004EFC07 /* MainView.swift in Sources */,
+				A8A08F6C2573FB53004EFC07 /* OpenTabBar.swift in Sources */,
+				A8A08F6F257400B3004EFC07 /* FavouriteList.swift in Sources */,
 				A827D1AF2538A79400825A76 /* AppDelegate.swift in Sources */,
-				A827D1C52538A7E500825A76 /* SignUpViewController.swift in Sources */,
-				A827D1F9253C900400825A76 /* NewViewController.swift in Sources */,
-				A827D1CC2538AA2A00825A76 /* LogInViewController.swift in Sources */,
 				A827D1B12538A79400825A76 /* SceneDelegate.swift in Sources */,
+				A82A2C98257514C400A547B2 /* ArrayToUSe.swift in Sources */,
+				A82A2C9525750E7100A547B2 /* ExtentionConstr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
