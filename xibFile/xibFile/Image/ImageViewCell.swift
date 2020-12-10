@@ -8,52 +8,48 @@
 import UIKit
 
 class ImageViewCell: UITableViewCell {
-    var imageViewCell = UIImageView()
-    var titleViewCell = UILabel()
     
+
+    var img = UIImageView()
+    var lable = UILabel()
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        addSubview(imageViewCell)
-        addSubview(titleViewCell)
-        
+        self.contentView.addSubview(img)
+        self.contentView.addSubview(lable)
         configImage()
-        configTitle()
-        setImageConstraints()
-        setTitleConstraints()
+        configLable()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func set(data: ImageStruct) {
+        img.image = data.image
+        lable.text = data.title
+    }
+    
     func configImage() {
-        imageViewCell.layer.cornerRadius = 10
-        imageViewCell.clipsToBounds = true
-        
-    }
-    
-    func configTitle() {
-        titleViewCell.numberOfLines = 0
-        titleViewCell.adjustsFontSizeToFitWidth = true
-    }
-    
-    func setImageConstraints() {
-        imageViewCell.translatesAutoresizingMaskIntoConstraints = false
+        img.translatesAutoresizingMaskIntoConstraints = false
+        img.layer.cornerRadius = 10
+        img.clipsToBounds = true
         NSLayoutConstraint.activate([
-            imageViewCell.centerXAnchor.constraint(equalTo: centerXAnchor),
-            imageViewCell.topAnchor.constraint(equalTo: topAnchor, constant: 5),
-            imageViewCell.heightAnchor.constraint(equalToConstant: 60),
-            imageViewCell.widthAnchor.constraint(equalTo: imageViewCell.heightAnchor, multiplier: 16/9)
+            img.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            img.centerXAnchor.constraint(equalTo: centerXAnchor),
+            img.heightAnchor.constraint(lessThanOrEqualToConstant: 50),
+            img.widthAnchor.constraint(lessThanOrEqualToConstant: 50)
         ])
     }
-    
-    func setTitleConstraints() {
-        titleViewCell.translatesAutoresizingMaskIntoConstraints = false
+
+    func configLable() {
+        lable.translatesAutoresizingMaskIntoConstraints = false
+        lable.numberOfLines = 0
+        lable.adjustsFontSizeToFitWidth = true
         NSLayoutConstraint.activate([
-            titleViewCell.centerXAnchor.constraint(equalTo: centerXAnchor),
-            titleViewCell.topAnchor.constraint(equalTo: imageViewCell.bottomAnchor, constant: 10),
-            titleViewCell.heightAnchor.constraint(equalToConstant: 40)
+            lable.topAnchor.constraint(equalTo: img.bottomAnchor, constant: 5),
+            lable.centerXAnchor.constraint(equalTo: centerXAnchor),
+            lable.heightAnchor.constraint(lessThanOrEqualToConstant: 35)
         ])
     }
-    
 }

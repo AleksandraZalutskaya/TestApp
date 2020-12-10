@@ -26,6 +26,6 @@ class ArrayToUSe: UITableViewCell {
     func configArray() {
         textTitle.numberOfLines = 0
         textTitle.adjustsFontSizeToFitWidth = true
-    }
+        }
     
 }

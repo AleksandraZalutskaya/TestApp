@@ -13,9 +13,11 @@ class MainView: UIViewController {
         
         view.backgroundColor = .systemPurple
         self.navigationItem.title = "Navigation Menu"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.tintColor = .blue
         
         let firstButton = UIButton()
-        firstButton.setTitle("Second Screen", for: .normal)
+        firstButton.setTitle("Table Views", for: .normal)
         firstButton.backgroundColor = .systemTeal
         firstButton.layer.cornerRadius = 20
         view.addSubview(firstButton)
@@ -29,6 +31,24 @@ class MainView: UIViewController {
             firstButton.heightAnchor.constraint(equalToConstant: CGFloat(50)),
             firstButton.widthAnchor.constraint(greaterThanOrEqualToConstant: CGFloat(200))
         ])
+        
+        let secondButton = UIButton()
+        secondButton.setTitle("Collection Views", for: .normal)
+        secondButton.backgroundColor = .systemTeal
+        secondButton.layer.cornerRadius = 20
+        view.addSubview(secondButton)
+        
+        secondButton.addTarget(self, action: #selector(didTapCollection), for: .touchUpInside)
+        
+        secondButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            secondButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            secondButton.topAnchor.constraint(equalTo: firstButton.bottomAnchor, constant: 10),
+            secondButton.heightAnchor.constraint(equalToConstant: CGFloat(50)),
+            secondButton.widthAnchor.constraint(greaterThanOrEqualToConstant: CGFloat(200))
+        ])
+        
+
     }
     
     @objc func didTapButton () {
@@ -38,6 +58,14 @@ class MainView: UIViewController {
         tabBarNC.modalPresentationStyle = .fullScreen
         present(tabBarNC, animated: true)
         
+    }
+    
+    @objc func didTapCollection() {
+        let firstVC = CollectionView()
+        let goToNC = UINavigationController(rootViewController: firstVC)
+        
+        goToNC.modalPresentationStyle = .fullScreen
+        present(goToNC, animated: true)
     }
 }
 

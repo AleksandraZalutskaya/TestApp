@@ -41,6 +41,9 @@ class ListOfTwenty: UIViewController {
         self.navigationItem.title = "Top Free Games"
         
         setUpTable()
+        view.addSubview(addTextField)
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(dismissBut))
     }
     
 
@@ -59,6 +62,16 @@ class ListOfTwenty: UIViewController {
         tableView.dataSource = self
     }
     
+    let addTextField: UITextField = {
+       let tf = UITextField()
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.placeholder = "Edit cell"
+        return tf
+    }()
+    
+    @objc func dismissBut() {
+        dismiss(animated: true, completion: nil)
+    }
         
 }
 
