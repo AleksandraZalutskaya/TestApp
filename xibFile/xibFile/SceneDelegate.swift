@@ -19,11 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let rootVC = sb.instantiateViewController(withIdentifier: "mainMenu")
+        let vc = UINavigationController(rootViewController: MainView())
         
-        window?.rootViewController = rootVC
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

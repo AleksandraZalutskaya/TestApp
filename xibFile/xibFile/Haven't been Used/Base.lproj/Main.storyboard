@@ -21,9 +21,6 @@
                                 <state key="normal" title="SignUp">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="buttonXib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqJ-G1-3tD"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oER-hU-Zaq">
                                 <rect key="frame" x="260" y="577.5" width="101" height="46"/>
@@ -31,9 +28,6 @@
                                 <state key="normal" title="LogIn">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="logInXib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHN-Od-FjM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4K-28-Bkc">
                                 <rect key="frame" x="117" y="295.5" width="189" height="46"/>
@@ -88,10 +82,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oER-hU-Zaq" secondAttribute="trailing" constant="53" id="u4L-lt-RVJ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="s19-fH-6Nx" id="7Ov-br-FAc"/>
-                        <outlet property="logIn" destination="oER-hU-Zaq" id="Nwj-QZ-aTV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
