@@ -1,0 +1,19 @@
+
+force_cast: warning
+line_length:
+- 200 # warning
+- 300 # error
+disabled_rules:
+ - shorthand_operator
+ - operator_whitespace
+ - comment_spacing
+ - trailing_newline
+ - function_body_length
+ - identifier_name
+ - file_length
+ - type_body_length
+ - cyclomatic_complexity
+ - large_tuple
+ - trailing_whitespace
+ - vertical_whitespace
+ - vertical_parameter_alignment

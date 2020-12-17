@@ -15,4 +15,3 @@ struct ImageData {
     static var MatthewPerry = UIImage(named: "MatthewPerry")!
     static var DavidSchwimmer = UIImage(named: "DavidSchwimmer")!
 }
-

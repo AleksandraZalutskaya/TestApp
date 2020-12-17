@@ -8,7 +8,7 @@
 import UIKit
 
 class ListOfTwenty: UIViewController {
-    
+
     let tableView = UITableView()
 
     var listToDisplay = [
@@ -31,62 +31,59 @@ class ListOfTwenty: UIViewController {
         "17. Zenly",
         "18. AliExpress",
         "19. Kufar",
-        "20. Кошелек ЮMoney",
+        "20. Кошелек ЮMoney"
     ]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         view.backgroundColor = .systemIndigo
         self.navigationItem.title = "Top Free Games"
-        
+
         setUpTable()
         view.addSubview(addTextField)
-        
+
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(dismissBut))
     }
-    
 
     func setUpTable() {
         view.addSubview(tableView)
-        
+
         setTableViewDeleg()
         tableView.rowHeight = 100
         tableView.allScreenConstr(to: view)
 
         tableView.register(ArrayToUSe.self, forCellReuseIdentifier: "cell")
     }
-    
+
     func setTableViewDeleg() {
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
+
     let addTextField: UITextField = {
        let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = "Edit cell"
         return tf
     }()
-    
+
     @objc func dismissBut() {
         dismiss(animated: true, completion: nil)
     }
-        
+
 }
 
-    
 extension ListOfTwenty: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listToDisplay.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = listToDisplay [indexPath.row]
-       
+
         return cell
     }
-    
-    
+
 }

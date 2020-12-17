@@ -8,15 +8,14 @@
 import UIKit
 
 class ListOfPeople: UIViewController {
-    
+
     let tableViewOfPeople = UITableView()
-    
+
     struct CellID {
         static let identifierID = "cellForPeople"
     }
-    
-    var list: [ImageStruct] = []
 
+    var list: [ImageStruct] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,18 +26,18 @@ class ListOfPeople: UIViewController {
         tableViewOfPeople.register(ImageViewCell.self, forCellReuseIdentifier: CellID.identifierID)
         self.navigationItem.title = "List of Friends"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
+
         setDeleg()
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(dismissBut))
-        
+
         tableViewOfPeople.frame = self.view.frame
         tableViewOfPeople.separatorColor = .clear
     }
-    
+
     @objc func dismissBut() {
         dismiss(animated: true, completion: nil)
     }
-    
+
     func setDeleg() {
         tableViewOfPeople.delegate = self
         tableViewOfPeople.dataSource = self
@@ -57,10 +56,17 @@ extension ListOfPeople: UITableViewDelegate, UITableViewDataSource {
 
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
+//        let cell = tableViewOfPeople.cellForRow(at: indexPath)
+//        if cell?.textLabel?.text == "Matt le Blanc" {
+//            let friendClass = MattLeBlancVC()
+//            let newVCMatt = UINavigationController(rootViewController: friendClass)
+//            newVCMatt.pushViewController(friendClass, animated: true)
+//        }
+
+        tableViewOfPeople.deselectRow(at: indexPath, animated: true)
+
         let newVC = MattLeBlancVC()
         let presentVC = self.list[indexPath.row]
         newVC.setProfile(data: presentVC)
@@ -78,9 +84,7 @@ extension ListOfPeople {
         let friend4 = ImageStruct(image: ImageData.CourteneyCox, title: "Courteney Cox")
         let friend5 = ImageStruct(image: ImageData.MatthewPerry, title: "Matthew Perry")
         let friend6 = ImageStruct(image: ImageData.DavidSchwimmer, title: "David Schwimmer")
-        
-        return [friend1,friend2,friend3,friend4,friend5,friend6]
+
+        return [friend1, friend2, friend3, friend4, friend5, friend6]
     }
 }
-
-
