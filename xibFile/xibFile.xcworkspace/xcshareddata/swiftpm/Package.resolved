@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SeaTouch",
+        "repositoryURL": "https://github.com/mredig/SeaTouch.git",
+        "state": {
+          "branch": null,
+          "revision": "73e448197a93d1dbb8803f48147ae7c92676f797",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

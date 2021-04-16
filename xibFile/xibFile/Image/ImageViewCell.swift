@@ -8,7 +8,6 @@
 import UIKit
 
 class ImageViewCell: UITableViewCell {
-    
 
     var img = UIImageView()
     var lable = UILabel()
@@ -24,12 +23,12 @@ class ImageViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     func set(data: ImageStruct) {
         img.image = data.image
         lable.text = data.title
     }
-    
+
     func configImage() {
         img.translatesAutoresizingMaskIntoConstraints = false
         img.layer.cornerRadius = 10
